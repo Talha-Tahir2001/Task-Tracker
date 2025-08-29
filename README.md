@@ -176,9 +176,8 @@ Click **Deploy**
 
 ----------
 
-## 📌 Roadmap
 
-# 📌 Project Roadmap
+## 📌 Project Roadmap
 
 This roadmap outlines the planned development milestones for the project.  
 You can track progress here — checked boxes represent completed tasks.  
