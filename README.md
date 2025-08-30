@@ -56,13 +56,19 @@ A simple **Task Tracker** built with **React 19 + Vite**. This app demonstrates 
 
 > A simple home page with a button to navigate to the task tracker.
 
+![Home](/public/home.png)
+
 ### Task Tracker
 
 > Add tasks, display them in a list, and delete tasks with a button.
 
+> ![Task-Tracker](/public/task-tracker.png)
+
 ### About Page
 
 > Displays information about the project.
+
+> ![Home](/public/about.png)
 
 ----------
 
@@ -170,9 +176,8 @@ Click **Deploy**
 
 ----------
 
-## 📌 Roadmap
 
-# 📌 Project Roadmap
+## 📌 Project Roadmap
 
 This roadmap outlines the planned development milestones for the project.  
 You can track progress here — checked boxes represent completed tasks.  
