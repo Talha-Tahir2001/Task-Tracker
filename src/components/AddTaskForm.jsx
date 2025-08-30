@@ -1,9 +1,15 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Button } from "./ui/button";
 import { Input } from "./ui/input";
 
-export default function AddTaskForm({ onAdd }) {
+export default function AddTaskForm({ onAdd, editingTask }) {
   const [title, setTitle] = useState("");
+
+  useEffect(() => {
+    if (editingTask) {
+      setTitle(editingTask.title);
+    }
+  }, [editingTask]);
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -19,10 +25,11 @@ export default function AddTaskForm({ onAdd }) {
         placeholder="Enter a task..."
         value={title}
         onChange={(e) => setTitle(e.target.value)}
-        className="flex-1"
+        className="flex-1 truncate"
+        maxLength={80}
       />
       <Button className="cursor-pointer" variant="default" type="submit">
-        Add
+        {editingTask ? "Update" : "Add"}
       </Button>
     </form>
   );
